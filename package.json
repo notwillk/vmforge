@@ -12,6 +12,24 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "vmforge-activity-bar",
+          "title": "VM Forge",
+          "icon": "$(vm)"
+        }
+      ]
+    },
+    "views": {
+      "vmforge-activity-bar": [
+        {
+          "id": "vmforge.activity-bar-webview",
+          "name": "VMs",
+          "type": "webview"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "vmforge.helloWorld",
